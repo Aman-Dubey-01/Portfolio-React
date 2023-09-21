@@ -5,6 +5,7 @@ import p2 from '../images/faerlyf.png';
 import p3 from '../images/portfolio.png';
 import p4 from '../images/portold.png';
 import amazon from '../images/amazon.jpg';
+import penchapters from '../images/Penchapters.jpg';
 import { useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -24,10 +25,10 @@ const Project = () => {
         scrollTrigger: {
           trigger: projectref,
           // markers:true,
-          start: "-600px 50%",
+          start: "-800px 50%",
           end: "80% 80%",
           scrub: 2,
-          toggleActions: "restart none none reverse"
+          toggleActions: "restart none none none"
         }
       })
 
@@ -38,6 +39,7 @@ const Project = () => {
       const card3 = projectref.children[1].children[2];
       const card4 = projectref.children[1].children[3];
       const card5 = projectref.children[1].children[4];
+      const card6 = projectref.children[1].children[5];
 
       tl_p.from(heading.children[0], { duration: 1.5, y: 50, opacity: 0, ease: Power3.out }, 'a')
       tl_p.from(heading.children[2], { y: 50, opacity: 0, ease: Power3.out }, '<+.2')
@@ -74,6 +76,12 @@ const Project = () => {
         .from(card5.children[1].children[1], { y: 10, opacity: 0 }, '<')
         .from(card5.children[1].children[2], { x: 100, opacity: 0 }, '<+.2')
 
+      tl_p.from(card6, { width: 0, x: -100, opacity: 0 }, 'a+1.7')
+        .from(card6.children[0].children[0], { height: '0px', opacity: 0 }, '<+.5')
+        .from(card6.children[1].children[0], { y: 20, opacity: 0 }, '<')
+        .from(card6.children[1].children[1], { y: 10, opacity: 0 }, '<')
+        .from(card6.children[1].children[2], { x: 100, opacity: 0 }, '<+.2')
+
 
 
     }, projectref);
@@ -91,19 +99,46 @@ const Project = () => {
       </div>
 
       <div className="project-container">
+
+        <div className="project-item project1">
+          <div className="project-img">
+            <img className='small' src={penchapters} alt="" />
+          </div>
+          <div className="project-description">
+            <h2>PenChapters</h2>
+
+
+            <p>PenChapters is a dynamic blogging platform that leverages Next.js, Prisma, MongoDB, OAuth, and Firebase
+              to offer a secure and responsive user experience. With OAuth and Firebase, it ensures reliable user
+              authentication, while Prisma and MongoDB optimize data management for peak performance.</p>
+            <div className="link">
+              <a href="https://penchapters.vercel.app" target="_blank" className="contact__button">
+                Live Link<AiOutlineArrowRight />
+              </a>
+              <a href="https://drive.google.com/file/d/11nSlyx2HOW_LdbLTy2Tw_3UAG-B7Q3ST/view?usp=sharing" target="_blank" className="contact__button">
+                Video Link<AiOutlineArrowRight />
+              </a>
+
+            </div>
+          </div>
+        </div>
         <div className="project-item project1">
           <div className="project-img">
             <img className='small' src={amazon} alt="" />
           </div>
           <div className="project-description">
             <h2>Amazon Clone</h2>
-            <p>This Amazon clone project, built with React, Sass, and Firebase, offers robust features including secure login authentication, seamless order management, and efficient cart management, ensuring a user-friendly e-commerce experience.</p>
+            <p>This Amazon clone project, built with React, Sass, and Firebase, offers robust features including
+              secure login authentication, seamless order management, and efficient cart management, ensuring a
+              user-friendly e-commerce experience.</p>
+              <div className="link">
             <a href="https://clone-amazon-aman.netlify.app/" target="_blank" className="contact__button">
               Live Link<AiOutlineArrowRight />
             </a>
             <a href="https://drive.google.com/file/d/11nSlyx2HOW_LdbLTy2Tw_3UAG-B7Q3ST/view?usp=sharing" target="_blank" className="contact__button">
               Video Link<AiOutlineArrowRight />
             </a>
+            </div>
           </div>
         </div>
         <div className="project-item project2">

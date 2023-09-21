@@ -35,8 +35,9 @@
   display: flex;
   height: auto;
   justify-content: center;
+
   width: 90%;
-  gap: 50px;
+  gap: 80px;
   margin: 40px auto;
   flex-wrap: wrap;
 }
@@ -73,7 +74,7 @@
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(to right bottom, #ffbb00, #d36428);
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
       }
 
       &-2 {
@@ -82,10 +83,6 @@
           rgb(9, 71, 9),
           rgb(121, 218, 121)
         );
-      }
-
-      &-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
       }
     }
   }
@@ -111,8 +108,8 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-        url(../images/Frontend.webp);
+      background-image: linear-gradient(to right bottom, #0f5faa, #0d055a),
+              url(../images/Frontend.webp);
     }
 
     &--2 {
@@ -122,11 +119,6 @@
           rgb(121, 218, 121)
         ),
         url(../images/MERN.jpg);
-    }
-
-    &--3 {
-      background-image: linear-gradient(to right bottom, #0f5faa, #0d055a),
-        url(../images/Reactdev.jpg);
     }
   }
 
@@ -155,8 +147,8 @@
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(#ffb900, 0.85),
-        rgba(#ff7730, 0.85)
+        rgba(#2998ff, 0.85),
+        rgba(#5643fa, 0.85)
       );
     }
 
@@ -165,14 +157,6 @@
         to right bottom,
         rgba(35, 158, 35, 0.85),
         rgba(9, 71, 9, 0.75)
-      );
-    }
-
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(#2998ff, 0.85),
-        rgba(#5643fa, 0.85)
       );
     }
   }

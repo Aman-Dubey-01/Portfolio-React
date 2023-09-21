@@ -71,35 +71,6 @@ function Tours() {
                             </div>
                         </div>
                     </div>
-
-
-                    <div className="card">
-                        <div className="card__side card__side--front">
-                            <div className="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 className="card__heading">
-                                <span className="card__heading-span card__heading-span--3">REACT<br /> <small>Developer</small></span>
-                            </h4>
-                            <div className="card__details">
-                                <ul>
-                                    <li><FaReact /> &nbsp;React.js / Next.js &nbsp;<TbBrandNextjs /></li>
-                                    <li><SiRedux /> &nbsp;Redux</li>
-                                    <li><SiMongodb /> MongoDB</li>
-                                    <li><SiExpress />&nbsp; Express JS</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div className="card__side card__side--back card__side--back-3">
-                            <div className="card__cta">
-                                <div className="card__price-box">
-                                    <p className="card__price-only">Crafting Exceptional User Experiences with React. Let's Make Your Vision a Reality</p>
-                                </div>
-                                <a href="#contact" className="btn btn--white">Hire Me</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </>

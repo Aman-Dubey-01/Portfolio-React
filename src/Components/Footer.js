@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="left">
                     <h1>Aman Dubey</h1>
-                    <h3>Front-End Developer  |  UI-UX Designer</h3>
+                    <h3>Front-End Developer | MERN STACK Developer</h3>
                     <p> <MdEmail /> dubeyaman905@gmail.com</p>
                 </div>
                 <div className="right">

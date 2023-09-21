@@ -44,7 +44,7 @@ const About = () => {
       // tl.from()  
       tl.from(".abouthead", { duration: 1, y: 50, opacity: 0, stagger: .5, ease: Power3.out }, "<+=.2")
         .from(content, { duration: 1, opacity: 0, y: "40px", delay: .5, ease: Power3.easeOut }, "<+=.6")
-        .from(".skills", { duration: 1, x: "-100vw", stagger: 0.3, ease: "Power3.easeOut" }, "<+=.3");
+        .from(".skills", { duration: 1, x: "-100vw", stagger: 0.3, ease: Power3.easeOut }, "<+=.3");
 
     }, about);
 
@@ -63,7 +63,7 @@ const About = () => {
       <div className="about-head">
         <h3 className="abouthead">Introduction</h3>
         <h2 className="abouthead">about me</h2>
-        <h4 className="abouthead">Front-End Developer 🧑‍💻 | UI-UX Designer | Web Animation 📸 </h4>
+        <h4 className="abouthead">Front-End Developer 🧑‍💻 | MERN STACK Developer | Web Animation 📸 </h4>
       </div>
 
       <div className="about-content">

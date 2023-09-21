@@ -100,7 +100,11 @@
                 rgb(223, 188, 71),
                 rgb(187, 92, 9)
               );
-              background-image: linear-gradient(to right bottom, rgb(247, 197, 31), rgb(187, 92, 9));
+              background-image: linear-gradient(
+                to right bottom,
+                rgb(247, 197, 31),
+                rgb(187, 92, 9)
+              );
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             }
@@ -315,7 +319,6 @@
           flex: 4;
           .hero-content-inner {
             h1 {
-              
               .hero-content-line {
                 margin: 0;
                 // padding: 0;
@@ -335,7 +338,7 @@
               }
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
               width: 80%;
               padding-right: 28px;
               margin-bottom: 36px;
@@ -364,9 +367,9 @@
 
 @media screen and (max-width: 800px) {
   .hero {
-width: 98.5vw;
+    width: 98.5vw;
     .logo-box {
-      padding:30px 0;
+      padding: 30px 0;
       width: 90%;
       height: 60px;
       margin: 0 auto;
@@ -376,7 +379,7 @@ width: 98.5vw;
       img {
         width: 50px;
       }
-  
+
       span {
         font-size: 1.2rem;
       }
@@ -420,7 +423,7 @@ width: 98.5vw;
               }
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
               width: 90%;
               padding-right: 48px;
               margin-bottom: 46px;
@@ -450,7 +453,6 @@ width: 98.5vw;
 @media screen and (max-width: 650px) {
   .hero {
     width: 98.5vw;
-   
 
     .container {
       width: 100%;
@@ -490,7 +492,7 @@ width: 98.5vw;
               }
             }
             p {
-              font-size: .7rem;
+              font-size: 0.7rem;
               width: 90%;
               padding-right: 48px;
               margin-bottom: 26px;
@@ -521,7 +523,7 @@ width: 98.5vw;
   .hero {
     visibility: hidden;
     // width: 100vw;
-    height: 150vh;
+    height: 130vh;
     position: relative;
 
     .logo-box {
@@ -578,7 +580,7 @@ width: 98.5vw;
               }
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
               width: 100%;
               padding-right: 40px;
               margin-bottom: 46px;
