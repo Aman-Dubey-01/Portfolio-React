@@ -1,0 +1,267 @@
+.about {
+  height: 100%;
+  width: inherit;
+  background-color: #f1f1f1;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1074%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(241%2c 241%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L151.91 0L0 73.75z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 73.75L151.91 0L452.09000000000003 0L0 178.49z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 178.49L452.09000000000003 0L531.95 0L0 282.05z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 282.05L531.95 0L1084.66 0L0 422.75z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1440 560L885.66 560L1440 474.29z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1440 474.29L885.66 560L451.57 560L1440 311.15000000000003z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1440 311.15000000000003L451.56999999999994 560L169.43999999999994 560L1440 240.98000000000002z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1440 240.98000000000002L169.44000000000005 560L127.05000000000005 560L1440 197.36z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1074'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); // overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 15%;
+  position: relative;
+
+  .animated-svg {
+    position: absolute;
+    width: 350px;
+    right: 12%;
+    opacity: 0.6;
+  }
+
+  .about-head {
+    padding-top: 30px;
+
+    h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(15, 14, 14, 0.705);
+    }
+
+    h2 {
+      font-size: 36px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgb(207, 146, 26);
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(87, 76, 76, 0.91);
+    }
+  }
+
+  .about-content {
+    padding-top: 20px;
+
+    p {
+      max-width: 55%;
+      text-align: justify;
+      letter-spacing: 0.2px;
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba(69, 65, 65, 0.866);
+    }
+
+    .skill-container {
+      padding-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .skills {
+        width: 120px;
+        height: 120px;
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(145deg, #ebebea, #d6d6d0c7);
+        box-shadow: 13px 13px 8px #efefef, -5px -5px 8px #4f4c4c51;
+        text-align: center;
+        
+
+        img {
+          padding-top: 6px;
+          width: 60px;
+          height: 60px;
+        }
+
+        h6 {
+          font-size: 12px;
+          letter-spacing: .5px;
+          padding-top: 8px;
+          font-weight: 400;
+        }
+
+        &:hover{
+          transform:  translateY(-50px);
+          box-shadow: none;
+          border: 1px solid rgba(128, 128, 128, 0.3);
+
+
+          img {
+            padding-top: 6px;
+            width: 80px;
+            height: 80px;
+            transition: all .4s ease-in-out;
+          }
+  
+          h6 {
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1000px) {
+
+  .about {
+    height: 100%;
+    width: inherit;
+    padding: 50px 7%;
+    position: relative;
+  
+    .animated-svg {
+      position: absolute;
+      width: 350px;
+      right: 2%;
+      opacity: 0.6;
+    }
+  
+    .about-head {
+      padding-top: 30px;
+  
+      h3 {
+        font-size: 12px;
+      }
+  
+      h2 {
+        font-size: 32px;
+      }
+  
+      h4 {
+        font-size: 12px;
+        letter-spacing: .5px;
+      }
+    }
+  
+    .about-content {
+      padding-top: 20px;
+  
+      p {
+        max-width: 55%;
+        font-size: 14px;
+      }
+  
+      .skill-container {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+        .skills {
+          width: 110px;
+          height: 110px;
+          padding: 10px;
+
+          img {
+            padding-top: 0px;
+            width: 50px;
+            height: 50px;
+          }
+
+          h6 {
+            font-size: .8rem;
+            letter-spacing: 1px;
+            padding-top: 3px;
+          }
+
+          &:hover{
+            transform:  translateY(-50px);
+            box-shadow: none;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+  
+  
+            img {
+              padding-top: 6px;
+              width: 70px;
+              height: 70px;
+              transition: all .4s ease-in-out;
+            }
+    
+            h6 {
+              display: none;
+            }
+  
+          }
+
+
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    height: 100%;
+    width: 100%;
+    padding: 50px auto;
+    position: relative;
+
+    .animated-svg {
+      display: none;
+    }
+
+    .about-head {
+      padding-top: 30px;
+
+      h3 {
+        font-size: .7rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      h4 {
+        font-size: .7rem;
+      }
+    }
+
+    .about-content {
+      width: 100%;
+      padding-top: 20px;
+
+      p {
+        max-width: 95%;
+        letter-spacing: .1px;
+        font-weight: 300;
+        font-size: .8rem;
+      }
+
+      .skill-container {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .skills {
+          width: 80px;
+          height: 80px;
+          padding: 4px;
+
+          img {
+            padding-top: 0px;
+            width: 40px;
+            height: 40px;
+          }
+
+          h6 {
+            font-size: .7rem;
+            letter-spacing: 1px;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
