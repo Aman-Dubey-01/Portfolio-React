@@ -115,7 +115,7 @@ const Project = () => {
               <a href="https://penchapters.vercel.app" target="_blank" className="contact__button">
                 Live Link<AiOutlineArrowRight />
               </a>
-              <a href="https://drive.google.com/file/d/11nSlyx2HOW_LdbLTy2Tw_3UAG-B7Q3ST/view?usp=sharing" target="_blank" className="contact__button">
+              <a href="https://drive.google.com/file/d/1sBVHy6Wee1PvVy56DIYgQ166IRLKAb03/view?usp=sharing" target="_blank" className="contact__button">
                 Video Link<AiOutlineArrowRight />
               </a>
 
